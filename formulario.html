@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+  </head>
+  <body>
+    <h1>formulario</h1>
+    <!--Formulario-->
+    <form action=""> autocomplete= "of"
+      <fieldset>
+        <legend>datos personales</legend>
+
+        <label for="firstname">Nombre: </label>
+        <input type="text" id="firstname" name="first_name" required />
+
+        <label for="lastname">Apellido: </label>
+        <input type="text" id="lastname" name="last_name" required />
+
+        <label for="city">Ciudad: </label>
+        <select name="user_city" id="city">
+          <option disabled selected value=""></option>
+          <option value="Madrid">Madrid</option>
+          <option value="Valencia">Valencia</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Granada">Granada</option>
+        </select>
+        <br />
+        <br />
+        <label for="username">Nombre de usuario: </label>
+        <input type="text" id="username" name="user_name" />
+
+        <label for="pwd">Contraseña: </label>
+        <input
+          type="password"
+          id="pwd"
+          name="password"
+          placeholder="4 a 10 caracteres"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="user_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" />
+
+        <label for="date">Fecha de nacimiento: </label>
+        <input type="date" id="date" name="user_date_birth" />
+
+        <label for="fcolor">Color favorito: </label>
+        <input type="color" id="fcolor" name="user_favorite_color" />
+
+        <label for="vip">Cliente vip? </label>
+        <input type="checkbox" id="vip" name="user_vip" />
+        <br />
+        <br />
+        <label for="message">Mensaje: </label><br />
+        <textarea
+          name="user_message"
+          id="message"
+          placeholder="Escribe aquí tu mensaje"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <br />
+        <br />
+        <input type="submit" value="enviar_input" />
+        <button type="submit">Enviar button</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

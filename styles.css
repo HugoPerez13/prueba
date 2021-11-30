@@ -1,0 +1,62 @@
+/***selectores por etiqueta***/
+
+body {
+    margin: 0;
+    font-family: "roboto", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+
+}
+
+nav {
+    background-color: #16bac5 ;
+    height: 3rem;
+    display: flex;
+    justify-content:  flex-end;
+    align-items: center;
+}
+
+
+/***selectores de clase**/
+
+.subtitle1 {
+    color: #c5283d;
+    font-size: 2rem;
+}
+
+.subtitle2 {
+    color: purple;
+    font-size: 2rem;
+
+}
+
+.name {
+    color: black;
+
+}
+
+.main-img {
+    width: 400px;
+    /** %=16 mgpx 
+}
+/**electores por id**/
+
+
+#section1 {
+    background-color: white;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/***selectores por relacion**/
+nav a {
+    color: white;
+    margin-right: 1rem;
+}
